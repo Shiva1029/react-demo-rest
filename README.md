@@ -16,7 +16,7 @@ Make sure you have git, node and npm installed globally and accessible through t
 
 ```
 git clone https://github.com/Shiva1029/react-demo-rest.git
-cd react-demo
+cd react-demo-rest
 ```
 
 * Then install the dependencies:
