@@ -1,0 +1,22 @@
+// All mixins defined here will be automatically
+// available to all sass files thanks to
+// 'sass-resources-loader'
+
+@mixin breakpoint($class)
+  @if $class == mobile-portrait
+    @media (min-width: $mobile-portrait)
+      @content
+  @if $class == mobile-landscape
+    @media (min-width: $mobile-landscape)
+      @content
+  @else if $class == tablet
+    @media (min-width: $tablet-landscape)
+      @content
+  @else if $class == desktop
+    @media (min-width: $desktop-portrait)
+      @content
+  @else if $class == wide
+    @media (min-width: $desktop-wide)
+      @content
+  @else
+    @warn "Breakpoint mixin supports: mobile-portrait, mobile-landscape, tablet, desktop and wide"

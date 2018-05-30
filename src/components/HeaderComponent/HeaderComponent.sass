@@ -1,0 +1,31 @@
+@include breakpoint(mobile-portrait)
+  .header
+    overflow: hidden
+    height: 50px
+    background-color: $grey-dark
+    position: relative
+    top: 0
+    width: 100%
+    z-index: 1
+
+@include breakpoint(tablet)
+  .header
+    position: fixed
+
+.menu
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+
+.menuItem
+  margin: 1rem
+
+.link
+  color: $white
+  text-decoration: none
+  &:hover, &:active
+    color: $white
+    text-decoration: none
+
+.title
+  color: $white
